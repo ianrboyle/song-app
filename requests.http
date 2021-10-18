@@ -7,3 +7,20 @@ Content-Type: application/json
   "year": 1969,
   "album": "Led Zeppelin 1"
 }
+
+###
+
+PATCH http://localhost:3000/songs/12.json
+Content-Type: application/json
+
+{
+  "title": "Good Times Bad Times",
+  "artist": "Led Zeppelin",
+  "year": 1969,
+  "album": "Led Zeppelin 1"
+}
+
+###
+
+DELETE http://localhost:3000/songs/1.json
+Content-Type: application/json
