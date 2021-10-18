@@ -8,4 +8,9 @@ class SongsController < ApplicationController
     song = Song.find_by(id: song_id)
     render json: {message: song}
   end
+  def create
+    song = Song.create(title: params["title"], artist: params["artist"], year: params["year"], album: params["album"])
+
+    render json: song
+  end
 end
